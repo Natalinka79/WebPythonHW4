@@ -1,7 +1,7 @@
 from BaseApp import BasePage
 from selenium.webdriver.common.by import By
-import yaml
 import logging
+import yaml
 import time
 
 
@@ -23,7 +23,7 @@ class OperationHelper(BasePage):
             element_name = description
         else:
             element_name = locator
-        logging.info(f"Send {word} to element {element_name}")
+        logging.debug(f"Send {word} to element {element_name}")
         field = self.find_element(locator)
         if not field:
             logging.error(f"Element {locator} not found")
@@ -85,14 +85,14 @@ class OperationHelper(BasePage):
         self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_CONTENT"], word, description="content form")
 
     def enter_contact_name(self, word):
-        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_CONTACT_NAME"], word, description="contact name form")
+        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_NAME_FIELD"], word, description="contact name form")
 
     def enter_contact_email(self, word):
-        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_CONTACT_MAIL"], word,
+        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_EMAIL_FIELD"], word,
                                    description="contact email form")
 
     def enter_contact_content(self, word):
-        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_CONTACT_CONTENT"], word,
+        self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_CONTENT_FIELD"], word,
                                    description="contact content form")
 
     # CLICK
@@ -109,7 +109,7 @@ class OperationHelper(BasePage):
         self.click_button(TestSearchLocators.ids["LOCATOR_CONTACT_BTN"], description="contact")
 
     def click_contact_send_btn(self):
-        self.click_button(TestSearchLocators.ids["LOCATOR_CONTACT_SEND"], description="contact us")
+        self.click_button(TestSearchLocators.ids["LOCATOR_CONTACT_US_BTN"], description="contact us")
 
     # GET TEXT
     def get_error_text(self):
@@ -120,6 +120,9 @@ class OperationHelper(BasePage):
 
     def get_res_text(self):
         return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_RES_LBL"], description="result")
+
+    def new_post_title(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_FIND_NEW_POST"], description="new_post_title")
 
     def get_alert_txt(self):
         alert = self.driver.switch_to.alert
