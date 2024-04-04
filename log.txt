@@ -1,0 +1,26 @@
+2024-04-04 20:02:19 INFO ====== WebDriver manager ======
+2024-04-04 20:02:22 INFO Get LATEST chromedriver version for google-chrome
+2024-04-04 20:02:23 INFO Get LATEST chromedriver version for google-chrome
+2024-04-04 20:02:23 INFO Get LATEST chromedriver version for google-chrome
+2024-04-04 20:02:25 INFO WebDriver version 123.0.6312.86 selected
+2024-04-04 20:02:25 INFO Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.86/win32/chromedriver-win32.zip
+2024-04-04 20:02:25 INFO About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.86/win32/chromedriver-win32.zip
+2024-04-04 20:02:25 INFO Driver downloading response is 200
+2024-04-04 20:02:27 INFO Get LATEST chromedriver version for google-chrome
+2024-04-04 20:02:28 INFO Driver has been saved in cache [C:\Users\CustomerAdmin\.wdm\drivers\chromedriver\win64\123.0.6312.86]
+2024-04-04 20:02:30 INFO Test 1 Starting
+2024-04-04 20:02:32 INFO Send test to element login form
+2024-04-04 20:02:32 INFO Send test to element pasword form
+2024-04-04 20:02:33 INFO Test 2 Starting
+2024-04-04 20:02:33 INFO Send Nika1111@ to element login form
+2024-04-04 20:02:33 INFO Send 5810230245 to element pasword form
+2024-04-04 20:02:35 INFO Test3 Stsrting
+2024-04-04 20:02:35 INFO Send Writer to element title form
+2024-04-04 20:02:35 INFO Send Pushkin to element description form
+2024-04-04 20:02:36 INFO Send A.S.Pushkin to element content form
+2024-04-04 20:02:39 INFO Test Contact_us Starting
+2024-04-04 20:02:39 INFO Send Natalinka.79 to element contact name form
+2024-04-04 20:02:39 INFO Send Natalinka.79@mail.ru to element contact email form
+2024-04-04 20:02:39 INFO Send A.S.Pushkin to element contact content form
+2024-04-04 20:02:41 INFO Get alert message
+2024-04-04 20:02:41 INFO Alert message is Form successfully submitted

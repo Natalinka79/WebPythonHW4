@@ -1,0 +1,16 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 5
+
+login: "Nika1111@"
+password: "5810230245"
+title_hello: "Hello, Nika1111@"
+
+title: "Writer"
+description: "Pushkin"
+content: "A.S.Pushkin"
+
+username: "Natalinka.79"
+user_email: "Natalinka.79@mail.ru"
+content_contact: "A.S.Pushkin"
+
